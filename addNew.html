@@ -1,0 +1,28 @@
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="scripts/addNew.js"></script>
+<div class="inner-menu">
+    <label for="newRecordType">Select Type</label>
+    <select id="newRecordType">
+        <option value="ingredient">Ingredient</option>
+        <option value="receipe">Receipe</option>
+    </select>
+</div>
+<div class="inner-container">
+    <label for="name">Name</label>
+    <input type="text" id="name">
+    <label for="description">Description</label>
+    <input type="text" id="description">
+    <div id="ingredientsList" class="disabled">
+        <label>Choose Ingredients</label>
+        <table id="selectIngredients">
+            <tr><th class="hidden">ID</th><th>Name</th><th>Action</th></tr>
+        </table>
+        <button id="prevBtn">Prev</button>
+        <button id="nextBtn">Next</button>
+        <label>Selected Ingredients</label>
+        <table id="selectedIngredients">
+            <tr><th class="hidden">ID</th><th>Name</th><th>Action</th></tr>
+        </table>
+    </div>
+    <input type="button" id="submitRecordBtn" value="Send">
+</div>

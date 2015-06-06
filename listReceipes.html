@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" src="scripts/listReceipes.js"></script>
+<div class="inner-menu"><span id="filter-ingredients" class="fa fa-sliders"></span></div>
+<div class="inner-container">
+    
+</div>
+<div id="editRecipes" title="Update Recipe">
+    <label for="name">Name</label>
+    <input type="text" id="name">
+    <label for="description">Description</label>
+    <textarea rows="4" cols="40" id="description"></textarea>
+    <label>Choose Ingredients</label>
+    <table id="selectIngredients">
+        <tr><th class="hidden">ID</th><th>Name</th><th>Action</th></tr>
+    </table>
+    <button id="prevBtn">Prev</button>
+    <button id="nextBtn">Next</button>
+    <label>Selected Ingredients</label>
+    <table id="selectedIngredients">
+        <tr><th class="hidden">ID</th><th>Name</th><th>Action</th></tr>
+    </table>
+    <input type="button" id="updateRecordBtn" value="Update">
+</div>
